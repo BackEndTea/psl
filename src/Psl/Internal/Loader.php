@@ -437,6 +437,11 @@ final class Loader
         'Psl\Encoding\Base64\decode',
         'Psl\Encoding\Hex\encode',
         'Psl\Encoding\Hex\decode',
+        'Psl\Internal\suppress',
+        'Psl\IO\Internal\open',
+        'Psl\IO\input_handle',
+        'Psl\IO\output_handle',
+        'Psl\IO\error_handle',
     ];
 
     public const INTERFACES = [
@@ -455,6 +460,23 @@ final class Loader
         'Psl\Observer\ObserverInterface',
         'Psl\Result\ResultInterface',
         'Psl\Encoding\Exception\ExceptionInterface',
+        'Psl\IO\Exception\ExceptionInterface',
+        'Psl\IO\CloseHandle',
+        'Psl\IO\CloseReadHandle',
+        'Psl\IO\CloseReadWriteHandle',
+        'Psl\IO\CloseSeekHandle',
+        'Psl\IO\CloseSeekReadHandle',
+        'Psl\IO\CloseSeekReadWriteHandle',
+        'Psl\IO\CloseSeekWriteHandle',
+        'Psl\IO\CloseWriteHandle',
+        'Psl\IO\Handle',
+        'Psl\IO\ReadHandle',
+        'Psl\IO\ReadWriteHandle',
+        'Psl\IO\SeekHandle',
+        'Psl\IO\SeekReadHandle',
+        'Psl\IO\SeekReadWriteHandle',
+        'Psl\IO\SeekWriteHandle',
+        'Psl\IO\WriteHandle',
     ];
 
     public const TRAITS = [
@@ -502,6 +524,8 @@ final class Loader
         'Psl\Hash\Context',
         'Psl\Encoding\Exception\IncorrectPaddingException',
         'Psl\Encoding\Exception\RangeException',
+        'Psl\IO\Exception\BlockingException',
+        'Psl\IO\Internal\ResourceHandle',
     ];
 
     private const TYPE_CONSTANTS = 1;
